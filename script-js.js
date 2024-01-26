@@ -35,7 +35,7 @@ function DesencriptacionMetodo(){
 //NO LO RECOMIENDO SOLO FUNCIONA EN CHORME
 function BotonCopiarTexto(){
     textoacopiar = document.getElementById("Texto-Encriptado").value;
-    navigator.clipboard.write(textoacopiar);
+    navigator.clipboard.writeText(textoacopiar);
     alert("Copiado al Clipboard: "+textoacopiar);
 }
 
