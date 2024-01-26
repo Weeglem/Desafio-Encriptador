@@ -14,6 +14,7 @@ body{
 }
 
 
+
 button{
     width:100%;
     border: 1pt solid #0A3871;
@@ -21,6 +22,7 @@ button{
     height:67px;
     border-radius: 24px;
     margin-top: 24px;
+    font-family: "Inter", sans-serif;
 }
 
 #Boton-Desencriptar{
@@ -28,9 +30,31 @@ button{
     background-color: #F3F5FC;
 }
 
+#Boton-Desencriptar:hover{
+    color:#0A3871;
+    background-color: #fafbff;
+}
+
 #Boton-Encriptar{
     color:white;
     background-color: #0A3871;
+}
+
+#Boton-Encriptar:hover{
+    color:white;
+    background-color: #0e5da7;
+}
+
+#Boton-Copiar{
+    border: 1px solid #0A3871;
+    color:#0A3871;
+    background-color: white;
+}
+
+#Boton-Copiar:hover{
+    border: 1px solid #0e5da7;
+    color:#0e5da7;
+    background-color: white;
 }
 
 
@@ -39,6 +63,7 @@ textarea{
     margin-top: 20px;
     margin-bottom: 20px;
     width:100%;
+    height:auto;
     display:flex;
     justify-content: center;
     padding:0;
@@ -48,6 +73,12 @@ textarea{
     color:#0A3871;
     resize: none;
 }
+
+textarea::placeholder{
+    color:#0A3871;
+}
+
+
 
 .Encriptar{
     font-size: 32px;
@@ -130,6 +161,10 @@ textarea{
 
 }
 
+
+
+
+
 @media (min-width:1024px){
 
 
@@ -156,7 +191,7 @@ textarea{
     }
 
     .Encriptar{
-        height:600px;
+        height:367px;
     }
     
 /*
