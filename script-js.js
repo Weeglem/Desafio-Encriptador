@@ -31,13 +31,12 @@ function DesencriptacionMetodo(){
 }
 
 
-
+/* NONONO+
 
 function BotonEncriptar(){
 
 let CajaAEncriptar = document.getElementById("EncriptarContenedor");
-let CajaADesncriptar = document.getElementById("EncriptadoContenedor");
-let cajaencriptadoravalor = CajaAEncriptar.value
+
 
 if(CajaAEncriptar.value == ""){
     alert("Caja vacia");
@@ -46,55 +45,33 @@ if(CajaAEncriptar.value == ""){
    textoingesadeusuario = cajaencriptadoravalor;
    let replica = EncriptacionMetodo();
    console.log(replica);
-   CajaADesncriptar.innerHTML = replica;
+   document.getElementById("Mensaje").innerHTML = replica;
+   document.getElementById("MensajeNoEncontrado").style.display  = "none";
+    document.getElementById("FotoMensaje").style.display  = "none";
+    document.getElementById("Mensaje").style.textAlign = "left";
+    document.getElementById("Mensaje").innerHTML = "uwu";
+   
 
 }
 }
 
-/*
-function BotonEncriptar(){
-
-    let CajaAEncriptar = document.getElementById("EncriptarContenedor");
-    let CajaADesncriptar = document.getElementById("EncriptadoContenedor");
-    let cajaencriptadoravalor = CajaAEncriptar.value
-    
-    if(CajaADesncriptar.value == ""){
-        alert("Caja vacia");
-    }else{
-        
-       textoingesadeusuario = cajaencriptadoravalor;
-       let replica = EncriptacionMetodo();
-       console.log(replica);
-       CajaADesncriptar.innerHTML = "";
-       CajaADesncriptar.innerHTML = replica;
-    
-    }
-    }
-    
-    function BotonDesencriptar(){
-    
-        let CajaAEncriptar = document.getElementById("EncriptarContenedor");
-        let CajaADesncriptar = document.getElementById("EncriptadoContenedor");
-        let cajaencriptadoravalor = CajaAEncriptar.value
-        
-        
-        if(CajaADesncriptar.value == ""){
-            alert("Caja vacia");
-        }else{
-            
-           textoingesadeusuario = CajaADesncriptar.value;
-           let replicaB = DesencriptacionMetodo();
-           console.log(replicaB);
-           CajaAEncriptar.innerHTML = "";
-           CajaAEncriptar.innerHTML = replicaB;
-        
-        }
-    }
 */
 
 
+/*
+function prueba(){
+document.getElementById("MensajeNoEncontrado").style.display  = "none";
+document.getElementById("FotoMensaje").style.display  = "none";
+document.getElementById("Mensaje").innerHTML = "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur";
+document.getElementById("Mensaje").style.textAlign = "left"; "whatever";
+}
 
 
+prueba();
+
+*/
+
+/*  ORIGINAL
 function BotonEncriptar(){
 //Si esto es estupido, pero no funciona fuera de la funcion .-.
 let TextoParaEncriptar = document.getElementById("Texto-A-Encriptar");
@@ -111,7 +88,71 @@ TextoEncriptado.value = "";
 TextoEncriptado.value = temporal1;
 console.log("Texto copiado exito Encripado"); 
 
+}*/
+
+function Inicio(){
+    document.getElementById("Texto-Encriptado").style.display = "none";
 }
+
+Inicio();
+
+function BotonEncriptar(){
+    //Si esto es estupido, pero no funciona fuera de la funcion .-.
+    let TextoParaEncriptar = document.getElementById("Texto-A-Encriptar");
+    let MostrarTextoFinal = document.getElementsByClassName("grupo2");
+        
+    //Guardamos los valores en textoingresadoporusuario
+    textoingesadeusuario = TextoParaEncriptar.value;
+    let temporal1 = EncriptacionMetodo();
+    
+    //Limpia la caja por si habia algo anteriormente
+    console.log("temporal 1: "+temporal1);  
+    //Escribe le contenido procesado en EncriptacionMetodo();2
+    document.getElementById("Texto-Encriptado").value = temporal1;
+
+    document.getElementById("MensajeNoEncontrado").style.display  = "none";
+    document.getElementById("FotoMensaje").style.display  = "none";
+    document.getElementById("Mensaje").style.display  = "none";
+    document.getElementById("Texto-Encriptado").style.display = "block";
+
+    console.log("Texto copiado exito Encripado"); 
+    
+    }
+
+
+/*  alternarivo modifica P
+
+function BotonEncriptar(){
+    //Si esto es estupido, pero no funciona fuera de la funcion .-.
+    let TextoParaEncriptar = document.getElementById("Texto-A-Encriptar");
+    let MostrarTextoFinal = document.getElementsByClassName("grupo2");
+        
+    //Guardamos los valores en textoingresadoporusuario
+    textoingesadeusuario = TextoParaEncriptar.value;
+    let temporal1 = EncriptacionMetodo();
+    
+    //Limpia la caja por si habia algo anteriormente
+    console.log("temporal 1: "+temporal1);  
+    //Escribe le contenido procesado en EncriptacionMetodo();2
+    document.getElementById("Mensaje").innerHTML = temporal1;
+
+    document.getElementById("MensajeNoEncontrado").style.display  = "none";
+    document.getElementById("FotoMensaje").style.display  = "none";
+
+    console.log("Texto copiado exito Encripado"); 
+    
+    }
+
+
+    */
+    
+
+
+
+
+
+
+/*  ORIGINAL
 
 function BotonDesencriptar(){
     //Si esto es estupido, pero no funciona fuera de la funcion .-.
@@ -128,3 +169,5 @@ function BotonDesencriptar(){
     TextoParaEncriptar.value = temporal2;
     console.log("Texto copiado exito DESncripado");   
     }
+
+    */

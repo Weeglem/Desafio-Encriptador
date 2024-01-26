@@ -1,6 +1,7 @@
 html{
     margin:0;
     padding:0 auto;
+    font-family: "Inter", sans-serif;
 }
 
 #Logo{
@@ -12,9 +13,6 @@ body{
     padding:20px;
 }
 
-.botones{
-    width:100%;
-}
 
 button{
     width:100%;
@@ -27,7 +25,7 @@ button{
 
 #Boton-Desencriptar{
     color:#0A3871;
-    background-color: none;
+    background-color: #F3F5FC;
 }
 
 #Boton-Encriptar{
@@ -43,12 +41,12 @@ textarea{
     width:100%;
     display:flex;
     justify-content: center;
-    height:auto;
     padding:0;
     box-sizing: border-box;
     border:none;
     font-size:16px;
     color:#0A3871;
+    resize: none;
 }
 
 .Encriptar{
@@ -67,13 +65,136 @@ textarea{
 }
 
 
+.grupo2{
+    margin-top:40px;
+    background-color: white;
+    border-radius: 32px;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding:32px;
+    box-sizing: border-box;
+}
 
+.grupo2 h2{
+    font-size: 24px;
+    color:#343A40;
+    text-align: center;
+    margin-bottom: 10px;
+}
 
-
-/*
-@media (min-width:1024px){
-
+.grupo2 p{
+    font-size: 16px;
+    color:#495057;
+    text-align: l;
 }
 
 
-*/
+.Muñeco{
+    display:none;
+    
+}
+
+.alerta img{
+    box-sizing: border-box;
+    width: 16px;
+    }
+
+
+
+
+
+@media (min-width:768px){
+
+
+
+    .botones{
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        
+    }
+
+    button{
+        width:350px;
+        
+        
+    }
+
+    .Muñeco{
+        display: none;
+        
+    }
+
+}
+
+@media (min-width:1024px){
+
+
+
+    .botones{
+        display:flex;
+        align-items: center;
+        justify-content: flex-end;
+        
+    }
+
+    .flex{
+        display:flex;
+        justify-content: center;
+    }
+
+    .Desencriptar{
+
+        font-size: 24px;
+        color:#495057;
+        padding:30px;
+        border-radius: 32px;
+        height:100%;
+    }
+
+    .Encriptar{
+        height:600px;
+    }
+    
+/*
+    .grupo2{
+        margin-left:40px;
+        background-color: white;
+        border-radius: 32px;
+        width:555px;
+    }
+
+    */
+
+    .grupo2{
+        margin-left:40px;
+        background-color: white;
+        border-radius: 32px;
+        width:555px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .grupo2 h2{
+        font-size: 24px;
+        color:#343A40;
+    }
+
+    .grupo2 p{
+        font-size: 16px;
+        color:#495057;
+    }
+
+
+    .Muñeco{
+        display:block;
+        width:300px;
+        
+    }
+}
+
