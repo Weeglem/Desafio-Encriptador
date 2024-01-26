@@ -1,0 +1,79 @@
+html{
+    margin:0;
+    padding:0 auto;
+}
+
+#Logo{
+    width:20px;
+}
+
+body{
+    background-color: #F3F5FC;
+    padding:20px;
+}
+
+.botones{
+    width:100%;
+}
+
+button{
+    width:100%;
+    border: 1pt solid #0A3871;
+    font-size: 16px;
+    height:67px;
+    border-radius: 24px;
+    margin-top: 24px;
+}
+
+#Boton-Desencriptar{
+    color:#0A3871;
+    background-color: none;
+}
+
+#Boton-Encriptar{
+    color:white;
+    background-color: #0A3871;
+}
+
+
+
+textarea{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width:100%;
+    display:flex;
+    justify-content: center;
+    height:auto;
+    padding:0;
+    box-sizing: border-box;
+    border:none;
+    font-size:16px;
+    color:#0A3871;
+}
+
+.Encriptar{
+    font-size: 32px;
+    color:#0A3871;
+    background: none;
+}
+
+.Desencriptar{
+
+    font-size: 24px;
+    color:#495057;
+    padding:30px;
+    border-radius: 32px;
+
+}
+
+
+
+
+
+/*
+@media (min-width:1024px){
+
+}
+
+
+*/
