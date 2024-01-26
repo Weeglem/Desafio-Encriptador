@@ -80,10 +80,10 @@ function BotonEncriptar(){
         alert("Ingresa un mensaje primero");
     }else{
         if (ComprobarMAYUSCULAS(textoingesadeusuario)){
-        alert("Quitame las mayusculas boludo");
+        alert("Quita las mayusculas");
         }else{
         if(ComprobarCaracteresEspeciales(textoingesadeusuario)){
-        alert("Quitame los caracteres boludo"); 
+        alert("Quita los caracteres especiales"); 
         } else{
         //Guardamos los valores en textoingresadoporusuario
         let temporal = EncriptacionMetodo();
@@ -116,10 +116,10 @@ function BotonDesencriptar(){
         alert("Ingresa un mensaje primero");
     }else{
         if (ComprobarMAYUSCULAS(textoingesadeusuario)){
-        alert("Quitame las mayusculas boludo");
+        alert("Quita las mayusculas");
         }else{
         if(ComprobarCaracteresEspeciales(textoingesadeusuario)){
-        alert("Quitame los caracteres boludo"); 
+        alert("Quita los caracteres especiales"); 
         } else{
         //Guardamos los valores en textoingresadoporusuario
         let temporal = DesencriptacionMetodo();
